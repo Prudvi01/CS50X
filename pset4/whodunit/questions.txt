@@ -1,0 +1,33 @@
+1.  stdint.h is a header file which provides a set of typedefs that specify exact width integer type
+    including the minimum and maximum allowable values for each type.
+
+2.  We use these types to designate signed/unsigned intger type of specific width
+    in two's complement representation. example: int32_t designates signed integer type of width 32 bits.
+
+3.  BYTE = 8 bits = 1 byte
+    DWORD = 32 bits = 4 bytes
+    LONG = 32 bits = 4 bytes
+    WORD = 16 bits = 2 bytes
+
+4.  The first 2 bytes of a BMP file are the charecters 'B' and 'M' stored in their ASCII representation.
+
+5.  bfSize is the size of the file as a whole including the headers.
+    biSize is the size of the BITMAPINFOHEADER structure. Its value is 40 bytes and is constant.
+
+6.  If biHeight is of negative value, it means the bitmap is a topdown DIB with the file origin at the
+    upper left.
+
+7.  biBitCount field keeps a count of the bits per pixel. Higher the value of biBitCount higher the
+    color depth.
+
+8.  fopen() might return NULL in lines 24 and 32 if the infile/outfile do not exist.
+
+9.  The third parameter of the fread() function is the number of elements of the given size are to be read.
+    here the value is 1 because we want to read only one block of element of the corresponding size.
+
+10. If bi.biwidth=3, copy.c assigns the value 3 to padding.
+
+11. fseek() function is used to move the file pointer to a new given location. It takes 3 parameters.
+
+12. SEEK_CUR allows to set the file position indication to the current position and seek of the given number
+    bytes is done.

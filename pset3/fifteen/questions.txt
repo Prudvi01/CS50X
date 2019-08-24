@@ -1,0 +1,4 @@
+0.The frame work allows us to play in 3 x 3 to 9 x 9
+1.The game board represents a two dimentional array structure. 
+2.greet() function is used to greet the user.
+3.init(); draw(); move(); and won(); functions are yet to be implemented.
